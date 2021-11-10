@@ -8,4 +8,4 @@ def index_redirect(request):
 
 
 def index(request):
-    return HttpResponse('Hello World.')
+    return render(request, 'about-us.html')
