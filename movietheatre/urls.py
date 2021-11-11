@@ -21,5 +21,6 @@ import aboutus.views
 urlpatterns = [
     path('', aboutus.views.index_redirect),
     path('about-us/', include('aboutus.urls')),
+    path('about-us/movies/', include('movies.urls')),
     path('admin/', admin.site.urls),
 ]
