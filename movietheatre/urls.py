@@ -19,7 +19,7 @@ from django.urls import path, include
 import aboutus.views
 
 urlpatterns = [
-    path('', aboutus.views.index_redirect),
+    path('', aboutus.views.index_redirect, name='index'),
     path('about-us/', include('aboutus.urls')),
     path('about-us/movies/', include('movies.urls')),
     path('admin/', admin.site.urls),
