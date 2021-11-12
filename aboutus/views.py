@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponsePermanentRedirect
+from django.http import HttpResponsePermanentRedirect
 
 
 # Create your views here.
@@ -8,4 +8,4 @@ def index_redirect(request):
 
 
 def index(request):
-    return render(request, 'about-us.html')
+    return render(request, 'aboutus/about-us.html')
